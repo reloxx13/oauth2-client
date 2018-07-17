@@ -1,6 +1,6 @@
 {
     "name": "league/oauth2-client",
-    "description": "OAuth 2.0 Client Library",
+    "description": "RELOXX13 MOD OAuth 2.0 Client Library",
     "license": "MIT",
     "config": {
         "sort-packages": true
