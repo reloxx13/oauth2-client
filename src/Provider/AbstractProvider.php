@@ -607,6 +607,10 @@ abstract class AbstractProvider
 		$request = $this->getAccessTokenRequest($params);
 		
 		$response = $this->getResponse($request);
+		if (empty($response))
+		{
+			return FALSE;
+		}
 		$prepared = $this->prepareAccessTokenResponse($response);
 		if (!empty($prepared["acc_expires_in"]) && empty($prepared["expires_in"]))
 		{
